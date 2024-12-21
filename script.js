@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typed Text Effect
     const typedTextElement = document.querySelector('.typed-text');
-    const roles = ['Web Developer'];
+    const roles = ['Innovator'];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
