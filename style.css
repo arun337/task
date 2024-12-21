@@ -246,7 +246,7 @@ body.dark-mode header {
     box-shadow: 0 2px 4px rgba(255,255,255,0.1);
 }
 
-body.dark-mode .logo {
+/* body.dark-mode .logo {
     color: #f1f1f1;
 }
 
@@ -256,7 +256,7 @@ body.dark-mode .nav-links a {
 
 body.dark-mode .nav-menu.active .nav-links a {
     color: #f1f1f1;
-}
+} */
 
 body.dark-mode .nav-menu.active .nav-links a:hover {
     background-color: #2a2a2a;
@@ -276,10 +276,10 @@ body.dark-mode .nav-menu.active .nav-links a:hover {
 }
 
 /* Dark Mode Styles */
-body.dark-mode {
+/* body.dark-mode {
     background-color: var(--dark-background);
     color: var(--dark-text);
-}
+} */
 
 * {
     margin: 0;
