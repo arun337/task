@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishan Shinde - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <span class="logo">Kishan Shinde</span>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog-section">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#countdown">Countdown</a>
+                <a href="javascript:void(0);" class="icon" id="hamburger-menu" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="name-highlight">Kishan Shinde</span></h1>
+                <h2 class="profession">
+                    <span class="typed-text">Web Developer</span>
+                </h2>
+                <p class="intro">A passionate creator turning ideas into digital experiences.</p>
+                
+                <div class="cta-container">
+                    <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>My Projects</h2>
+            <div class="project-grid" id="project-gallery">
+                <!-- Project cards will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="blog-section">
+            <div class="section-header">
+                <h2>Blog Posts</h2>
+                <p>Insights and thoughts from my digital journey</p>
+            </div>
+            <div id="blog-posts" class="blog-posts">
+                <!-- Blog posts will be dynamically populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <section id="countdown" class="countdown">
+            <h2>Countdown Timer</h2>
+            <div class="countdown-container">
+                <input type="number" id="countdown-input" placeholder="Enter seconds">
+                <button id="start-countdown" onclick="startCountdown()" class="btn btn-secondary">Start Countdown</button>
+                <div id="timer-display" class="timer-display">00:00</div>
+            </div>
+        </section>
+
+       
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Kishan Shinde. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+        <button id="prev-image" class="modal-nav-btn prev">&#10094;</button>
+        <button id="next-image" class="modal-nav-btn next">&#10095;</button>
+    </div>
+
+    <div id="blog-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content" id="blog-modal-content"></div>
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
